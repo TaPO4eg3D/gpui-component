@@ -26,7 +26,9 @@ gpui-component-macros = { path = "crates/macros", version = "0.5.0" }
 gpui-component-assets = { path = "crates/assets", version = "0.5.0" }
 story = { path = "crates/story" }
 
-gpui = { git = "https://github.com/zed-industries/zed" }
+# TODO: Keep it from this fork until this issue is resolved:
+# https://github.com/zed-industries/zed/pull/46543
+gpui = { git = "https://github.com/Neulus/zed.git" }
 gpui-macros = "0.2.2"
 sum-tree = { version = "0.2.0", package = "zed-sum-tree" }
 # reqwest = { version = "0.12.15-zed", package = "zed-reqwest" }
