@@ -678,7 +678,7 @@ dependencies = [
  "lazycell",
  "libc",
  "mach",
- "nix",
+ "nix 0.19.1",
  "num-traits",
  "uom",
  "winapi",
@@ -1206,7 +1206,7 @@ dependencies = [
 [[package]]
 name = "collections"
 version = "0.1.0"
-source = "git+https://github.com/zed-industries/zed#e0931d5a9dbf4f781b336fdf448739e74a2ac0b5"
+source = "git+https://github.com/TaPO4eg3D/zed.git?rev=137f6c7395f3aeb57118eb6950d06c2a5f5475cf#137f6c7395f3aeb57118eb6950d06c2a5f5475cf"
 dependencies = [
  "gpui_util",
  "indexmap",
@@ -1762,7 +1762,7 @@ dependencies = [
 [[package]]
 name = "derive_refineable"
 version = "0.1.0"
-source = "git+https://github.com/zed-industries/zed#e0931d5a9dbf4f781b336fdf448739e74a2ac0b5"
+source = "git+https://github.com/TaPO4eg3D/zed.git?rev=137f6c7395f3aeb57118eb6950d06c2a5f5475cf#137f6c7395f3aeb57118eb6950d06c2a5f5475cf"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -1882,6 +1882,12 @@ name = "dpi"
 version = "0.1.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "d8b14ccef22fc6f5a8f4d7d768562a182c04ce9a3b3157b91390b52ddfdf1a76"
+
+[[package]]
+name = "drm-fourcc"
+version = "2.2.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "0aafbcdb8afc29c1a7ee5fbe53b5d62f4565b35a042a662ca9fecd0b54dae6f4"
 
 [[package]]
 name = "dtoa"
@@ -2929,7 +2935,7 @@ dependencies = [
 [[package]]
 name = "gpui"
 version = "0.2.2"
-source = "git+https://github.com/zed-industries/zed#e0931d5a9dbf4f781b336fdf448739e74a2ac0b5"
+source = "git+https://github.com/TaPO4eg3D/zed.git?rev=137f6c7395f3aeb57118eb6950d06c2a5f5475cf#137f6c7395f3aeb57118eb6950d06c2a5f5475cf"
 dependencies = [
  "accesskit",
  "anyhow",
@@ -2938,22 +2944,14 @@ dependencies = [
  "backtrace",
  "bindgen",
  "bitflags 2.11.1",
- "block",
- "cbindgen",
  "chrono",
- "cocoa 0.26.0",
- "cocoa-foundation 0.2.0",
  "collections",
- "core-foundation 0.10.0",
- "core-foundation-sys 0.8.7",
- "core-graphics 0.24.0",
- "core-text",
  "core-video",
  "ctor",
  "derive_more 2.1.1",
+ "drm-fourcc",
  "embed-resource",
  "etagere",
- "foreign-types",
  "futures",
  "futures-concurrency",
  "getrandom 0.3.4",
@@ -2968,14 +2966,9 @@ dependencies = [
  "itertools 0.14.0",
  "log",
  "lyon",
- "mach2",
- "media",
- "metal",
  "num_cpus",
- "objc",
  "parking",
  "parking_lot",
- "pathfinder_geometry",
  "pin-project",
  "pollster 0.4.0",
  "postage",
@@ -3240,7 +3233,7 @@ dependencies = [
 [[package]]
 name = "gpui_apple"
 version = "0.1.0"
-source = "git+https://github.com/zed-industries/zed#e0931d5a9dbf4f781b336fdf448739e74a2ac0b5"
+source = "git+https://github.com/TaPO4eg3D/zed.git?rev=137f6c7395f3aeb57118eb6950d06c2a5f5475cf#137f6c7395f3aeb57118eb6950d06c2a5f5475cf"
 dependencies = [
  "anyhow",
  "block",
@@ -3263,7 +3256,7 @@ dependencies = [
 [[package]]
 name = "gpui_linux"
 version = "0.1.0"
-source = "git+https://github.com/zed-industries/zed#e0931d5a9dbf4f781b336fdf448739e74a2ac0b5"
+source = "git+https://github.com/TaPO4eg3D/zed.git?rev=137f6c7395f3aeb57118eb6950d06c2a5f5475cf#137f6c7395f3aeb57118eb6950d06c2a5f5475cf"
 dependencies = [
  "accesskit",
  "accesskit_unix",
@@ -3281,22 +3274,16 @@ dependencies = [
  "gpui_util",
  "gpui_wgpu",
  "http_client",
- "image",
- "itertools 0.14.0",
  "libc",
  "log",
  "notify-rust",
  "oo7",
  "open",
  "parking_lot",
- "pathfinder_geometry",
- "pollster 0.4.0",
- "profiling",
  "raw-window-handle",
  "smallvec",
  "smol",
  "strum",
- "swash",
  "url",
  "uuid",
  "wayland-backend",
@@ -3315,7 +3302,7 @@ dependencies = [
 [[package]]
 name = "gpui_macos"
 version = "0.1.0"
-source = "git+https://github.com/zed-industries/zed#e0931d5a9dbf4f781b336fdf448739e74a2ac0b5"
+source = "git+https://github.com/TaPO4eg3D/zed.git?rev=137f6c7395f3aeb57118eb6950d06c2a5f5475cf#137f6c7395f3aeb57118eb6950d06c2a5f5475cf"
 dependencies = [
  "accesskit",
  "accesskit_macos",
@@ -3361,7 +3348,7 @@ dependencies = [
 [[package]]
 name = "gpui_macros"
 version = "0.1.0"
-source = "git+https://github.com/zed-industries/zed#e0931d5a9dbf4f781b336fdf448739e74a2ac0b5"
+source = "git+https://github.com/TaPO4eg3D/zed.git?rev=137f6c7395f3aeb57118eb6950d06c2a5f5475cf#137f6c7395f3aeb57118eb6950d06c2a5f5475cf"
 dependencies = [
  "heck 0.5.0",
  "proc-macro2",
@@ -3372,7 +3359,7 @@ dependencies = [
 [[package]]
 name = "gpui_platform"
 version = "0.1.0"
-source = "git+https://github.com/zed-industries/zed#e0931d5a9dbf4f781b336fdf448739e74a2ac0b5"
+source = "git+https://github.com/TaPO4eg3D/zed.git?rev=137f6c7395f3aeb57118eb6950d06c2a5f5475cf#137f6c7395f3aeb57118eb6950d06c2a5f5475cf"
 dependencies = [
  "console_error_panic_hook",
  "gpui",
@@ -3385,7 +3372,7 @@ dependencies = [
 [[package]]
 name = "gpui_shared_string"
 version = "0.1.0"
-source = "git+https://github.com/zed-industries/zed#e0931d5a9dbf4f781b336fdf448739e74a2ac0b5"
+source = "git+https://github.com/TaPO4eg3D/zed.git?rev=137f6c7395f3aeb57118eb6950d06c2a5f5475cf#137f6c7395f3aeb57118eb6950d06c2a5f5475cf"
 dependencies = [
  "schemars",
  "serde",
@@ -3395,7 +3382,7 @@ dependencies = [
 [[package]]
 name = "gpui_util"
 version = "0.1.0"
-source = "git+https://github.com/zed-industries/zed#e0931d5a9dbf4f781b336fdf448739e74a2ac0b5"
+source = "git+https://github.com/TaPO4eg3D/zed.git?rev=137f6c7395f3aeb57118eb6950d06c2a5f5475cf#137f6c7395f3aeb57118eb6950d06c2a5f5475cf"
 dependencies = [
  "anyhow",
  "log",
@@ -3405,7 +3392,7 @@ dependencies = [
 [[package]]
 name = "gpui_web"
 version = "0.1.0"
-source = "git+https://github.com/zed-industries/zed#e0931d5a9dbf4f781b336fdf448739e74a2ac0b5"
+source = "git+https://github.com/TaPO4eg3D/zed.git?rev=137f6c7395f3aeb57118eb6950d06c2a5f5475cf#137f6c7395f3aeb57118eb6950d06c2a5f5475cf"
 dependencies = [
  "anyhow",
  "console_error_panic_hook",
@@ -3417,6 +3404,7 @@ dependencies = [
  "log",
  "parking_lot",
  "raw-window-handle",
+ "scheduler",
  "uuid",
  "wasm-bindgen",
  "wasm-bindgen-futures",
@@ -3428,28 +3416,27 @@ dependencies = [
 [[package]]
 name = "gpui_wgpu"
 version = "0.1.0"
-source = "git+https://github.com/zed-industries/zed#e0931d5a9dbf4f781b336fdf448739e74a2ac0b5"
+source = "git+https://github.com/TaPO4eg3D/zed.git?rev=137f6c7395f3aeb57118eb6950d06c2a5f5475cf#137f6c7395f3aeb57118eb6950d06c2a5f5475cf"
 dependencies = [
  "anyhow",
+ "ash",
  "bytemuck",
  "collections",
  "cosmic-text",
+ "drm-fourcc",
  "etagere",
  "gpui",
  "gpui_util",
  "itertools 0.14.0",
- "js-sys",
  "log",
+ "nix 0.29.0",
  "parking_lot",
- "pollster 0.4.0",
  "profiling",
  "raw-window-handle",
  "smallvec",
  "swash",
  "unicode-bidi",
  "unicode-segmentation",
- "wasm-bindgen",
- "wasm-bindgen-futures",
  "web-sys",
  "wgpu",
  "zed-font-kit",
@@ -3458,7 +3445,7 @@ dependencies = [
 [[package]]
 name = "gpui_windows"
 version = "0.1.0"
-source = "git+https://github.com/zed-industries/zed#e0931d5a9dbf4f781b336fdf448739e74a2ac0b5"
+source = "git+https://github.com/TaPO4eg3D/zed.git?rev=137f6c7395f3aeb57118eb6950d06c2a5f5475cf#137f6c7395f3aeb57118eb6950d06c2a5f5475cf"
 dependencies = [
  "accesskit",
  "accesskit_windows",
@@ -3782,7 +3769,7 @@ dependencies = [
 [[package]]
 name = "http_client"
 version = "0.1.0"
-source = "git+https://github.com/zed-industries/zed#e0931d5a9dbf4f781b336fdf448739e74a2ac0b5"
+source = "git+https://github.com/TaPO4eg3D/zed.git?rev=137f6c7395f3aeb57118eb6950d06c2a5f5475cf#137f6c7395f3aeb57118eb6950d06c2a5f5475cf"
 dependencies = [
  "anyhow",
  "async-compression",
@@ -3802,7 +3789,7 @@ dependencies = [
 [[package]]
 name = "http_client_tls"
 version = "0.1.0"
-source = "git+https://github.com/zed-industries/zed#e0931d5a9dbf4f781b336fdf448739e74a2ac0b5"
+source = "git+https://github.com/TaPO4eg3D/zed.git?rev=137f6c7395f3aeb57118eb6950d06c2a5f5475cf#137f6c7395f3aeb57118eb6950d06c2a5f5475cf"
 dependencies = [
  "rustls",
  "rustls-platform-verifier",
@@ -4847,13 +4834,12 @@ dependencies = [
 [[package]]
 name = "media"
 version = "0.1.0"
-source = "git+https://github.com/zed-industries/zed#e0931d5a9dbf4f781b336fdf448739e74a2ac0b5"
+source = "git+https://github.com/TaPO4eg3D/zed.git?rev=137f6c7395f3aeb57118eb6950d06c2a5f5475cf#137f6c7395f3aeb57118eb6950d06c2a5f5475cf"
 dependencies = [
  "anyhow",
  "bindgen",
  "core-foundation 0.10.0",
  "core-video",
- "ctor",
  "foreign-types",
  "metal",
  "objc",
@@ -5026,6 +5012,18 @@ dependencies = [
  "bitflags 1.3.2",
  "cc",
  "cfg-if",
+ "libc",
+]
+
+[[package]]
+name = "nix"
+version = "0.29.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "71e2746dc3a24dd78b3cfcb7be93368c6de9963d30f43a6a73998a9cf4b17b46"
+dependencies = [
+ "bitflags 2.11.1",
+ "cfg-if",
+ "cfg_aliases",
  "libc",
 ]
 
@@ -5853,7 +5851,7 @@ checksum = "9b4f627cb1b25917193a259e49bdad08f671f8d9708acfd5fe0a8c1455d87220"
 [[package]]
 name = "perf"
 version = "0.1.0"
-source = "git+https://github.com/zed-industries/zed#e0931d5a9dbf4f781b336fdf448739e74a2ac0b5"
+source = "git+https://github.com/TaPO4eg3D/zed.git?rev=137f6c7395f3aeb57118eb6950d06c2a5f5475cf#137f6c7395f3aeb57118eb6950d06c2a5f5475cf"
 dependencies = [
  "collections",
  "serde",
@@ -6829,7 +6827,7 @@ dependencies = [
 [[package]]
 name = "refineable"
 version = "0.1.0"
-source = "git+https://github.com/zed-industries/zed#e0931d5a9dbf4f781b336fdf448739e74a2ac0b5"
+source = "git+https://github.com/TaPO4eg3D/zed.git?rev=137f6c7395f3aeb57118eb6950d06c2a5f5475cf#137f6c7395f3aeb57118eb6950d06c2a5f5475cf"
 dependencies = [
  "derive_refineable",
 ]
@@ -6881,7 +6879,7 @@ checksum = "19b30a45b0cd0bcca8037f3d0dc3421eaf95327a17cad11964fb8179b4fc4832"
 [[package]]
 name = "reqwest_client"
 version = "0.1.0"
-source = "git+https://github.com/zed-industries/zed#e0931d5a9dbf4f781b336fdf448739e74a2ac0b5"
+source = "git+https://github.com/TaPO4eg3D/zed.git?rev=137f6c7395f3aeb57118eb6950d06c2a5f5475cf#137f6c7395f3aeb57118eb6950d06c2a5f5475cf"
 dependencies = [
  "anyhow",
  "bytes",
@@ -6891,7 +6889,6 @@ dependencies = [
  "http_client_tls",
  "log",
  "regex",
- "serde",
  "tokio",
  "zed-reqwest",
 ]
@@ -7318,7 +7315,7 @@ dependencies = [
 [[package]]
 name = "scheduler"
 version = "0.1.0"
-source = "git+https://github.com/zed-industries/zed#e0931d5a9dbf4f781b336fdf448739e74a2ac0b5"
+source = "git+https://github.com/TaPO4eg3D/zed.git?rev=137f6c7395f3aeb57118eb6950d06c2a5f5475cf#137f6c7395f3aeb57118eb6950d06c2a5f5475cf"
 dependencies = [
  "async-task",
  "backtrace",
@@ -7327,6 +7324,7 @@ dependencies = [
  "futures",
  "parking_lot",
  "rand 0.9.4",
+ "wasm_thread",
  "web-time",
 ]
 
@@ -7939,7 +7937,7 @@ checksum = "13c2bddecc57b384dee18652358fb23172facb8a2c51ccc10d74c157bdea3292"
 [[package]]
 name = "sum_tree"
 version = "0.1.0"
-source = "git+https://github.com/zed-industries/zed#e0931d5a9dbf4f781b336fdf448739e74a2ac0b5"
+source = "git+https://github.com/TaPO4eg3D/zed.git?rev=137f6c7395f3aeb57118eb6950d06c2a5f5475cf#137f6c7395f3aeb57118eb6950d06c2a5f5475cf"
 dependencies = [
  "heapless",
  "log",
@@ -9449,7 +9447,7 @@ checksum = "b6c140620e7ffbb22c2dee59cafe6084a59b5ffc27a8859a5f0d494b5d52b6be"
 [[package]]
 name = "util_macros"
 version = "0.1.0"
-source = "git+https://github.com/zed-industries/zed#e0931d5a9dbf4f781b336fdf448739e74a2ac0b5"
+source = "git+https://github.com/TaPO4eg3D/zed.git?rev=137f6c7395f3aeb57118eb6950d06c2a5f5475cf#137f6c7395f3aeb57118eb6950d06c2a5f5475cf"
 dependencies = [
  "perf",
  "quote",
@@ -11458,7 +11456,7 @@ dependencies = [
 [[package]]
 name = "zlog"
 version = "0.1.0"
-source = "git+https://github.com/zed-industries/zed#e0931d5a9dbf4f781b336fdf448739e74a2ac0b5"
+source = "git+https://github.com/TaPO4eg3D/zed.git?rev=137f6c7395f3aeb57118eb6950d06c2a5f5475cf#137f6c7395f3aeb57118eb6950d06c2a5f5475cf"
 dependencies = [
  "anyhow",
  "chrono",
@@ -11475,7 +11473,7 @@ checksum = "b8848ee67ecc8aedbaf3e4122217aff892639231befc6a1b58d29fff4c2cabaa"
 [[package]]
 name = "ztracing"
 version = "0.1.0"
-source = "git+https://github.com/zed-industries/zed#e0931d5a9dbf4f781b336fdf448739e74a2ac0b5"
+source = "git+https://github.com/TaPO4eg3D/zed.git?rev=137f6c7395f3aeb57118eb6950d06c2a5f5475cf#137f6c7395f3aeb57118eb6950d06c2a5f5475cf"
 dependencies = [
  "tracing",
  "tracing-subscriber",
@@ -11486,7 +11484,7 @@ dependencies = [
 [[package]]
 name = "ztracing_macro"
 version = "0.1.0"
-source = "git+https://github.com/zed-industries/zed#e0931d5a9dbf4f781b336fdf448739e74a2ac0b5"
+source = "git+https://github.com/TaPO4eg3D/zed.git?rev=137f6c7395f3aeb57118eb6950d06c2a5f5475cf#137f6c7395f3aeb57118eb6950d06c2a5f5475cf"
 
 [[package]]
 name = "zune-core"
